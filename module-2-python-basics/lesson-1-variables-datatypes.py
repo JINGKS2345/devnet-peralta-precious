@@ -1,7 +1,7 @@
 """
 Module 2 — Lesson 1: Variables & Data Types
-Student: [your name]
-Date: [date]
+Student: Peralta, Precious Pauline M.
+Date: 09-27-26
 
 ============================================
 WHAT IS THIS TOPIC? (explain it like you're
