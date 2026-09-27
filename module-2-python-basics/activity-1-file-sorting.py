@@ -1,7 +1,7 @@
 """
 Module 2 — Activity: File Sorting with os and shutil
-Student: [your name]
-Date: [date]
+Student: Peralta, Precious Pauline M.
+Date: 09-27-26
 
 ============================================
 WHAT DID YOU BUILD? (explain in your own words)
@@ -30,9 +30,34 @@ Paste the code you already wrote for this activity below.
 import os
 import shutil
 
-# --- paste your existing code here ---
+source_folder = "files"
 
+categories = {
+    "Images": [".jpg", ".jpeg", ".png", ".gif"],
+    "Documents": [".pdf", ".docx", ".txt"],
+    "Audio": [".mp3", ".wav"],
+    "Videos": [".mp4", ".mkv"]
+}
 
+for file_name in os.listdir(source_folder):
+    file_path = os.path.join(source_folder, file_name)
+
+    if os.path.isfile(file_path):
+        extension = os.path.splitext(file_name)[1].lower()
+
+        for folder, extensions in categories.items():
+            if extension in extensions:
+                destination_folder = os.path.join(source_folder, folder)
+
+                os.makedirs(destination_folder, exist_ok=True)
+
+                shutil.move(
+                    file_path,
+                    os.path.join(destination_folder, file_name)
+                )
+
+                print(f"Moved {file_name} to {folder}")
+                break
 """
 ============================================
 A MISTAKE I MADE (or one I want to avoid)
