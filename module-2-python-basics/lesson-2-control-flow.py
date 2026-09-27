@@ -1,10 +1,10 @@
 """
 Module 2 — Lesson 2: Control Flow (if / elif / else)
-Student: [your name]
-Date: [date]
+Student: Peralta, Precious Pauline M.
+Date: 09-27-26
 
 ============================================
-WHAT IS THIS TOPIC? (explain it like you're
+WHAT ARE CONTROL FLOW (if / elif / else)? (explain it like you're
 teaching a friend who's never coded before)
 ============================================
 [write your own explanation here]
